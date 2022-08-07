@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-light-gray: hsl(212, 45%, 89%);
+  --bg-grayish-blue: hsl(220, 15%, 55%);
+  --bg-dark-blue: hsl(218, 44%, 22%);
+  --bg-font-outfit: "Outfit", sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  height: 100vh;
+  background-color: var(--bg-light-gray);
+  font-family: var(--bg-font-outfit);
+  font-weight: 400;
+  font-size: 15px;
+}
+.main {
+  width: 100%;
+  height: 80vh;
+  padding: 4px;
+}
+.container {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 280px;
+  height: 470px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--bg-white);
+  -webkit-box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.19);
+}
+
+.card-header,
+img {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.card-body {
+  height: 300px;
+  padding: 8px;
+
+  text-align: center;
+}
+
+.card-body > .card-heading {
+  font-family: var(--bg-font-outfit);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 1440px;
+    height: 100vh;
+    background-color: var(--bg-light-gray);
+    font-family: var(--bg-font-outfit);
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .main {
+    width: 100%;
+    height: 80vh;
+    padding: 4px;
+  }
+  .container {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 280px;
+    height: 470px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--bg-white);
+    -webkit-box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.19);
+  }
+  .card-header,
+  img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  .card-body {
+    height: 250px;
+    padding: 8px;
+
+    text-align: center;
+  }
+
+  .card-body > .card-heading {
+    font-family: var(--bg-font-outfit);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
